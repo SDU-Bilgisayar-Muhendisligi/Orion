@@ -1,12 +1,4 @@
 {
-<<<<<<< HEAD
-	"compilerOptions": {
-	    "baseUrl": "./src",
-	    "paths": {
-	      "~/*": ["./*"]
-	    }
-	}
-=======
   "compilerOptions": {
     "baseUrl": "src"
   },
@@ -17,5 +9,4 @@
     "node_modules",
     "build"
   ]
->>>>>>> master
 }

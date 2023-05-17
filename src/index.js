@@ -1,19 +1,7 @@
 import React from 'react';
-<<<<<<< HEAD
-import ReactDOM from 'react-dom/client';
-import "./style.css"
-import App from './App';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-=======
 import ReactDOM from 'react-dom';
 import "./style.css"
+import './index.css';
 import App from './App';
 import stores from './stores'
 import {Provider} from 'react-redux'
@@ -26,4 +14,3 @@ ReactDOM.render(
     </React.StrictMode>,
     document.getElementById('root')
 );
->>>>>>> master

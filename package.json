@@ -1,18 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "orion",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-=======
-  "name": "prototurk-spotify",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -26,14 +13,13 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-indiana-drag-scroll": "^2.1.0",
+    "react-modal": "^3.16.1",
     "react-range": "^1.8.11",
     "react-redux": "^7.2.6",
-    "react-router-dom": "^5.3.4",
+    "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "react-use": "^17.3.1",
-    "spotify-web-api-js": "^1.5.2",
     "web-vitals": "^1.0.1"
->>>>>>> master
   },
   "scripts": {
     "start": "react-scripts start",
@@ -61,14 +47,8 @@
     ]
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.23",
-    "tailwindcss": "^3.3.2"
-=======
     "autoprefixer": "^10.3.5",
     "postcss": "^8.3.7",
     "tailwindcss": "^2.2.15"
->>>>>>> master
   }
 }

@@ -1,29 +1,14 @@
 @tailwind base;
-<<<<<<< HEAD
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-    html, body #root {
-        @apply h-full
-=======
 @tailwind utilities;
 @tailwind components;
 
 @layer base {
     html, body, #root {
         @apply h-full bg-backdrop text-white antialiased
->>>>>>> master
     }
     #root {
         @apply flex flex-col
     }
-<<<<<<< HEAD
-    .container {
-        height: calc(100% - theme('spacing.24'));
-    }
-}
-=======
     .wrapper {
         height: calc(100% - theme('spacing.24'));
         @apply flex
@@ -32,4 +17,3 @@
         scroll-behavior: smooth;
     }
 }
->>>>>>> master

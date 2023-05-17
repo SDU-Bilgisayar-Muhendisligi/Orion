@@ -1,21 +1,11 @@
-<<<<<<< HEAD
-import Navbar from "components/Navbar";
-
-function Content() {
-    return (
-        <main>
-            <Navbar />
-            content
-        </main>
-    )
-=======
-
 import { Switch, Route } from 'react-router-dom';
 import Navbar from 'components/Navbar'
 
 import Home from "views/Home"
 import Search from "views/Search"
 import Collection from "views/Collection"
+import Album from 'views/Album';
+
 
 function Content() {
 	return (
@@ -32,11 +22,13 @@ function Content() {
 					<Route path="/collection">
 						<Collection />
 					</Route>
+					<Route path="/album">
+						<Album />
+					</Route>
 				</Switch>
 			</div>
 		</main>
 	)
->>>>>>> master
 }
 
 export default Content

@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-function Navbar() {
-    return (
-        <nav>
-            navbar
-        </nav>
-    )
-}
-
-export default Navbar
-=======
-
 import Navigation from "./Navbar/Navigation";
 import Auth from "./Navbar/Auth";
 import Login from "./Navbar/Login";
@@ -43,4 +31,3 @@ function Navbar() {
 }
 
 export default Navbar
->>>>>>> master

@@ -21,11 +21,32 @@ function Content() {
 					<Route path="/collection">
 						<Collection />
 					</Route>
+					<Route path="/album">
+						<Album />
+					</Route>
+					<Route path="/Hesapgorunum">
+						<Hesapgorunum />
+					</Route>
+					<Route path="/Profilduzenle">
+						<Profilduzenle/>
+					</Route>
+					<Route path="/Parola">
+						<Parola />
+					</Route>
+					<Route path="/Hesapsil">
+						<Hesapsil />
+					</Route>
+					<Route path="/Dil">
+						<Dil />
+					</Route>
+					<Route path="/Oturumkapatma">
+						<Oturumkapatma />
+					</Route>
+
 				</Switch>
 			</div>
 		</main>
 	)
-
 }
 
 export default Content

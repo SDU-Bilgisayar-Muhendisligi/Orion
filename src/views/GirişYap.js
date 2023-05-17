@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -22,18 +23,18 @@ function Login() {
 
   return (
     <form onSubmit={handleSubmit}>
+      <h2 className="text-2xl font-bold mb-4">Giriş Yap</h2>
       <label>
-        Username:
+        Kullanıcı Adı:
         <input type="text" value={username} onChange={event => setUsername(event.target.value)} />
       </label>
       <label>
-        Password:
+        Şifre:
         <input type="password" value={password} onChange={event => setPassword(event.target.value)} />
       </label>
-      <button type="submit">Login</button>
+      <button type="submit">Giriş Yap</button>
     </form>
   );
 }
-
 
 export default Login;

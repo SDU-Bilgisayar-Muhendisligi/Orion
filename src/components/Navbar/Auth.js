@@ -8,7 +8,7 @@ function Auth() {
 
     const user = {
         name: 'Melike Nogay',
-        avatar: 'https://yt3.ggpht.com/yti/AHyvSCBJ-5LWiMEL4655GDHOwF8gKO6kLRzQLircRjAIYw=s88-c-k-c0x00ffffff-no-rj-mo'
+        avatar: 'https://yt3.ggpht.com/yti/AHyvSCDlCcVIOo8DnS_E0Lt6VBv2eG6W2ohJqEH5iw=s88-c-k-c0x00ffffff-no-rj-mo'
     }
 
    
@@ -31,7 +31,7 @@ function Auth() {
                                     className={`h-10 flex justify-between items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}
                                     href="#"
                                 >
-                                    Account
+                                    Hesap Genel Görünümü
                                     <Icon size={16} name="external" />
                                 </a>
                             )}
@@ -42,7 +42,7 @@ function Auth() {
                                     className={`h-10 flex justify-between items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}
                                     href="#"
                                 >
-                                    <NavLink to="/GirişYap" target="_blank">GirişYap</NavLink>
+                                    <NavLink to="/Kayıt" target="_blank">Kayıt Ol</NavLink>
                                 </a>
                             )}
                         </Menu.Item>
@@ -52,7 +52,7 @@ function Auth() {
                                     className={`h-10 flex justify-between items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}
                                    
                                 >
-                                    <NavLink to="/Kayıt" target="_blank">Kayıt</NavLink>
+                                    <NavLink to="/GirişYap" target="_blank">Giriş Yap</NavLink>
                                 </a>
                             )}
                         </Menu.Item>
@@ -64,7 +64,7 @@ function Auth() {
                                      className={`h-10 flex justify-between items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}
                                     
                                 >
-                                 <NavLink to="/Profil" target="_blank">Profil görüntüle</NavLink>
+                                 <NavLink to="/Profil" target="_blank">Profil Görüntüle</NavLink>
                                 
                                   
                                     
@@ -77,7 +77,37 @@ function Auth() {
                                     className={`h-10 flex items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}
                                     href="#"
                                 >
-                                    Log out
+                                    Dil Ayarla
+                                </a>
+                            )}
+                        </Menu.Item>
+                        <Menu.Item>
+                            {({ active }) => (
+                                <a
+                                    className={`h-10 flex items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}
+                                    href="#"
+                                >
+                                    Parolayı Değiştir
+                                </a>
+                            )}
+                        </Menu.Item>
+                        <Menu.Item>
+                            {({ active }) => (
+                                <a
+                                    className={`h-10 flex items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}
+                                    href="#"
+                                >
+                                    Oturumu Kapat
+                                </a>
+                            )}
+                        </Menu.Item>
+                        <Menu.Item>
+                            {({ active }) => (
+                                <a
+                                    className={`h-10 flex items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}
+                                    href="#"
+                                >
+                                    Hesabı Sil
                                 </a>
                             )}
                         </Menu.Item>
@@ -88,6 +118,5 @@ function Auth() {
         </Menu>
     )
 }
-
 
 export default Auth

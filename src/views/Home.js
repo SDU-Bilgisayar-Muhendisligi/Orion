@@ -11,7 +11,9 @@ function Home() {
 				items={songs}
 			/>
 			<Section
-				title="Hayalimdeki Çalma Listem"
+
+				title="Hayalindeki Çalma Listen"
+
 				more="/blabla"
 				items={songs}
 			/>
@@ -22,6 +24,7 @@ function Home() {
 			/>
 		</div>
 	)
+
 }
 
 export default Home

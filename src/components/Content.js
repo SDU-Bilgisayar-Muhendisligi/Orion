@@ -4,6 +4,11 @@ import Navbar from 'components/Navbar'
 import Home from "views/Home"
 import Search from "views/Search"
 import Collection from "views/Collection"
+import Album from 'views/Album';
+import Profil from 'views/Profil';
+import Kayıt from 'views/Kayıt';
+import GirişYap from 'views/GirişYap';
+
 
 function Content() {
 	return (
@@ -19,6 +24,18 @@ function Content() {
 					</Route>
 					<Route path="/collection">
 						<Collection />
+					</Route>
+					<Route path="/album">
+						<Album />
+					</Route>
+					<Route path="/profil">
+						<Profil />
+					</Route>
+					<Route path="/kayıt">
+						<Kayıt />
+					</Route>
+					<Route path="/girişyap">
+						<GirişYap />
 					</Route>
 				</Switch>
 			</div>

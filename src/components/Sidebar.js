@@ -7,7 +7,6 @@ import { useSelector } from "react-redux";
 import SidebarCover from "./Sidebar/SidebarCover";
 import { NavLink } from 'react-router-dom';
 
-
 function Sidebar() {
 
 	const sidebar = useSelector(state => state.player.sidebar)

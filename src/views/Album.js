@@ -9,6 +9,7 @@ function Album() {
     { artist: "Artist 2", name: "Song 2" },
     { artist: "Artist 3", name: "Song 3" },
   ]);
+  
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -80,6 +81,7 @@ function Album() {
     </div>
   );
 }
+
 
 export default Album;
 

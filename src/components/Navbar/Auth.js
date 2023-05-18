@@ -4,7 +4,7 @@ import { Icon } from "Icons";
 function Auth() {
 
     const user = {
-        name: 'Melike Nogay',
+        name: 'Beyza Gürsoy',
         avatar: 'https://yt3.ggpht.com/yti/AHyvSCDlCcVIOo8DnS_E0Lt6VBv2eG6W2ohJqEH5iw=s88-c-k-c0x00ffffff-no-rj-mo'
     }
 

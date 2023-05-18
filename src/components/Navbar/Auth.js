@@ -1,14 +1,12 @@
 import { Menu } from '@headlessui/react'
 import { Icon } from "Icons";
-import Album from 'views/Album';
-import Profil from 'views/Profil';
-import { NavLink } from 'react-router-dom';
 
 
 function Auth() {
 
     const user = {
-        name: 'Melike Nogay',
+
+        name: 'Beyza Gürsoy',
         avatar: 'https://yt3.ggpht.com/yti/AHyvSCDlCcVIOo8DnS_E0Lt6VBv2eG6W2ohJqEH5iw=s88-c-k-c0x00ffffff-no-rj-mo'
     }
 
@@ -17,6 +15,8 @@ function Auth() {
         <Menu as="nav" className={"relative"}>
             {({ open }) => (
                 <>
+
+
 
                     <Menu.Button className={`flex items-center h-8 rounded-3xl pr-2 ${open ? 'bg-active' : 'bg-black'} hover:bg-active`}>
                         <img src={user.avatar} className={"w-8 h-8 rounded-full p-0.5 mr-2"} />
@@ -32,10 +32,6 @@ function Auth() {
                                     className={`h-10 flex justify-between items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}
                                     href="#"
                                 >
-
-                                   
-
-                                    Hesap Genel Görünümü
 
                                     <Icon size={16} name="external" />
                                 </a>
@@ -80,13 +76,18 @@ function Auth() {
                             )}
                         </Menu.Item>
                       
+
                         <Menu.Item>
                             {({ active }) => (
                                 <a
                                     className={`h-10 flex items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}
                                     href="#"
                                 >
+
                                     Parolayı Değiştir
+
+                                    Profil Görüntüle
+
                                 </a>
                             )}
                         </Menu.Item>
@@ -96,6 +97,7 @@ function Auth() {
                                     className={`h-10 flex items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}
                                     href="#"
                                 >
+
                                     Oturumu Kapat
                                 </a>
                             )}
@@ -114,8 +116,6 @@ function Auth() {
                     </Menu.Items>
                 </>
             )}
-
-            
 
         </Menu>
     )

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import Section from "components/Section";
 import songs from "data/songs"
@@ -11,10 +12,20 @@ function Collection() {
 			/>
 			
 
+=======
+function Collection() {
+	return (
+		<div>
+			burası kitaplık sayfası
+>>>>>>> beyza
 		</div>
 	)
 }
 
+<<<<<<< HEAD
 
 
 export default Collection
+=======
+export default Collection
+>>>>>>> beyza

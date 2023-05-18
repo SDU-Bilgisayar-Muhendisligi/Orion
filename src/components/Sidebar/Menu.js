@@ -1,9 +1,6 @@
 import { Icon } from 'Icons';
 import { NavLink } from 'react-router-dom';
 
-import Album from './../../views/Album';
-
-
 function Menu() {
 	return (
 		<nav className="px-2">
@@ -32,8 +29,6 @@ function Menu() {
 						Kitaplığın
 					</NavLink>
 				</li>
-
-
 			</ul>
 		</nav>
 	)

@@ -29,6 +29,11 @@ function Menu() {
 						Kitaplığın
 					</NavLink>
 				</li>
+<<<<<<< HEAD
+=======
+		
+				
+>>>>>>> cansu
 			</ul>
 		</nav>
 	)

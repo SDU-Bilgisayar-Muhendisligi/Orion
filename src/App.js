@@ -6,20 +6,33 @@ import React from 'react';
 import PlayList from './PlayList';
 
 
+import './App.css';
+
+
+
 
 function App() {
+
+	
+  
+
 	return (
 		<Router>
 			<div className="wrapper">
 				<Sidebar/>
 				<Content/>
- 			    <PlayList />
+
 			</div>
 			<BottomBar/>
+	       
+		
 		</Router>
+		
+		
 	);
-
+	
 }
 
 
 export default App;
+

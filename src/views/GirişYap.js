@@ -23,18 +23,21 @@ function Login() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2 className="text-2xl font-bold mb-4">Giriş Yap</h2>
+
       <label>
-        Kullanıcı Adı:
+        Username:
         <input type="text" value={username} onChange={event => setUsername(event.target.value)} />
       </label>
       <label>
-        Şifre:
+        Password:
         <input type="password" value={password} onChange={event => setPassword(event.target.value)} />
       </label>
-      <button type="submit">Giriş Yap</button>
+      <button type="submit">Login</button>
+
     </form>
   );
 }
+
+
 
 export default Login;

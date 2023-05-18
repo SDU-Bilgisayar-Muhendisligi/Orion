@@ -1,7 +1,8 @@
-import React from 'react';
+
+
 import ReactDOM from 'react-dom';
 import "./style.css"
-import './index.css';
+>>>>>>> cansu
 import App from './App';
 import stores from './stores'
 import {Provider} from 'react-redux'

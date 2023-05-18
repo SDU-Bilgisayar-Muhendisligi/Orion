@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Switch, Route } from 'react-router-dom';
 import Navbar from 'components/Navbar'
 import Home from "views/Home"
@@ -10,6 +11,15 @@ import GirişYap from 'views/GirişYap';
 
 
 
+=======
+
+import { Switch, Route } from 'react-router-dom';
+import Navbar from 'components/Navbar'
+
+import Home from "views/Home"
+import Search from "views/Search"
+import Collection from "views/Collection"
+>>>>>>> cansu
 
 function Content() {
 	return (
@@ -29,6 +39,26 @@ function Content() {
 					<Route path="/album">
 						<Album />
 					</Route>
+
+					<Route path="/Hesapgorunum">
+						<Hesapgorunum />
+					</Route>
+					<Route path="/Profilduzenle">
+						<Profilduzenle/>
+					</Route>
+					<Route path="/Parola">
+						<Parola />
+					</Route>
+					<Route path="/Hesapsil">
+						<Hesapsil />
+					</Route>
+					<Route path="/Dil">
+						<Dil />
+					</Route>
+					<Route path="/Oturumkapatma">
+						<Oturumkapatma />
+					</Route>
+
 
 				</Switch>
 			</div>

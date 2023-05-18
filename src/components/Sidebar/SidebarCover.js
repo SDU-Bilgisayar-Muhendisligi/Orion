@@ -19,5 +19,8 @@ function SidebarCover() {
     )
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> cansu
 export default SidebarCover

@@ -1,31 +1,24 @@
+import Sidebar from 'components/Sidebar'
+import BottomBar from 'components/BottomBar'
+import Content from 'components/Content'
+import { BrowserRouter as Router } from "react-router-dom"
+import React from 'react';
+import PlayList from './PlayList';
+import './App.css';
+
 
 
 function App() {
-
-	const [currentForm, setCurrentForm] = useState('login');
-
-  const toggleForm = (formName) => {
-    setCurrentForm(formName);
-  } 
 	return (
 		<Router>
 			<div className="wrapper">
 				<Sidebar/>
 				<Content/>
+				<PlayList />
 			</div>
 			<BottomBar/>
-	       <div className="App">
-              {
-                     currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
-              }
-        </div>
-		
 		</Router>
-		
-		
 	);
-	
 }
-
 
 export default App;

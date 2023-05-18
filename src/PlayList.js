@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Playlist = () => {
     return (
         <div className="p-4">
@@ -30,5 +31,6 @@ const Playlist = () => {
         </div>
     );
 };
+
 
 export default Playlist;

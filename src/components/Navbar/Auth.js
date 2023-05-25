@@ -34,53 +34,33 @@ function Auth() {
                         </Menu.Item>
                         <Menu.Item>
                             {({ active }) => (
-                                <a
-                                    className={`h-10 flex justify-between items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}
-                                    href="#"
-                                >
-                                    <NavLink to="/Kayıt" target="_blank">Kayıt Ol</NavLink>
-                                </a>
+                               <NavLink to="/Kayıt" className={`h-10 flex items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}>
+                               Kayıt Ol
+                           </NavLink>
                             )}
                         </Menu.Item>
                         <Menu.Item>
                             {({ active }) => (
-                                <a
-                                    className={`h-10 flex justify-between items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}
-                                   
-                                >
-                                    <NavLink to="/GirişYap" target="_blank">Giriş Yap</NavLink>
-                                </a>
+                                <NavLink to="/GirişYap" className={`h-10 flex items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}>
+                                Giriş Yap
+                            </NavLink>
                             )}
                         </Menu.Item>
                         
                         <Menu.Item>
                             {({ active }) => (
                                 
-                                <a 
-                                
-                                     className={`h-10 flex justify-between items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}
-                                    
-                                >
-                                 <NavLink to="/Profil" target="_blank">Profil Görüntüle</NavLink>
-                                
-                                  
-                                    
-                                </a>
+                                <NavLink to="/Profil" className={`h-10 flex items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}>
+                                Profil Görüntüle
+                            </NavLink>
                             )}
                         </Menu.Item>
                         <Menu.Item>
                             {({ active }) => (
                                 
-                                <a 
-                                
-                                     className={`h-10 flex justify-between items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}
-                                    
-                                >
-                                 <NavLink to="/Profilduzenle" target="_blank">Profil Düzenle</NavLink>
-                                
-                                  
-                                    
-                                </a>
+                                <NavLink to="/Profilduzenle" className={`h-10 flex items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}>
+                                Profil Düzenle
+                            </NavLink>
                             )}
                         </Menu.Item>
                         <Menu.Item>

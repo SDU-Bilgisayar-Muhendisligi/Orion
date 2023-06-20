@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
+import { useTranslation } from "react-i18next"
 
 function Dil() {
-  const [selectedLanguage, setSelectedLanguage] = useState('turkish');
+  const [selectedLanguage, setSelectedLanguage] = useState('tr');
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    i18n.changeLanguage(selectedLanguage);
+  }, [selectedLanguage]);
 
   function handleLanguageChange(event) {
     setSelectedLanguage(event.target.value);
@@ -9,29 +16,32 @@ function Dil() {
 
   return (
     <div className="flex items-center space-x-2">
+      <h1>{t("hello")}</h1>
       <label>
         <input
           type="radio"
-          value="turkish"
-          checked={selectedLanguage === 'turkish'}
+          value="tr"
+          checked={selectedLanguage === 'tr'}
           onChange={handleLanguageChange}
           className="mr-1"
         />
-        Türkçe
+        {t("turkish")}
       </label>
       <label>
         <input
           type="radio"
-          value="english"
-          checked={selectedLanguage === 'english'}
+          value="en"
+          checked={selectedLanguage === 'en'}
           onChange={handleLanguageChange}
           className="mr-1"
         />
-        İngilizce
+        {t("english")}
       </label>
+      <div style={{ width: '10px' }}></div> {/* Mesafe eklenen kısım */}
     </div>
   );
 }
+
 function MainComponent() {
   const [selectedLanguage, setSelectedLanguage] = useState('turkish');
 
@@ -47,4 +57,4 @@ function MainComponent() {
   );
 }
 
-export default Dil
+export default Dil;

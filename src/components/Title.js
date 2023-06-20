@@ -1,6 +1,8 @@
 import {NavLink} from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 function Title({ title, more = false }) {
+	const { t } = useTranslation();
 	return (
 		<header className="flex items-center justify-between mb-4">
 
@@ -10,7 +12,7 @@ function Title({ title, more = false }) {
 
 			{more && (
 				<NavLink className={"text-xs hover:underline font-semibold uppercase text-link tracking-wider"} to={more}>
-					HEPSİNİ GÖR
+					{t("view-all")}
 				</NavLink>
 			)}
 		</header>

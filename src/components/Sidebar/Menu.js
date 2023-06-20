@@ -1,8 +1,11 @@
 import { Icon } from 'Icons';
 import { NavLink } from 'react-router-dom';
 import Album from './../../views/Album';
+import { useTranslation } from 'react-i18next';
 
 function Menu() {
+	const { t } = useTranslation();
+
 	return (
 		<nav className="px-2">
 			<ul className="flex flex-col">
@@ -11,7 +14,7 @@ function Menu() {
 						<span>
 							<Icon name="home" />
 						</span>
-						Ana sayfa
+						{t("home-screen")}
 					</NavLink>
 				</li>
 				<li>
@@ -19,7 +22,7 @@ function Menu() {
 						<span>
 							<Icon name="search" />
 						</span>
-						Ara
+						{t("search")}
 					</NavLink>
 				</li>
 				<li>
@@ -27,7 +30,7 @@ function Menu() {
 						<span>
 							<Icon name="collection" />
 						</span>
-						Kitaplığın
+						{t("your-library")}
 					</NavLink>
 				</li>
 			</ul>

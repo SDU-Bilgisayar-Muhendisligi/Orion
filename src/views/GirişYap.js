@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-
+import { useTranslation } from 'react-i18next';
 
 function Login() {
+  const { t } = useTranslation();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -23,16 +24,16 @@ function Login() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2 className="text-2xl font-bold mb-4">Giriş Yap</h2>
+      <h2 className="text-2xl font-bold mb-4">{t("login")}</h2>
       <label>
-        Kullanıcı Adı:
-        <input type="text" value={username} onChange={event => setUsername(event.target.value)} />
+      {t("user-name")}
+        <input type="text" value={username} className='text-black' onChange={event => setUsername(event.target.value)} />
       </label>
       <label>
-        Şifre:
-        <input type="password" value={password} onChange={event => setPassword(event.target.value)} />
+      {t("password")}
+        <input type="password" value={password}  className='text-black' onChange={event => setPassword(event.target.value)} />
       </label>
-      <button type="submit">Giriş Yap</button>
+      <button type="submit">{t("login")}</button>
     </form>
   );
 }

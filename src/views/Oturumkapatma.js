@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 
 function Oturumkapatma() {
+  const { t } = useTranslation();
   const handleLogout = () => {
 
   };
@@ -18,7 +20,7 @@ function Oturumkapatma() {
             style={{ backgroundColor: "#1DB954" }}
             onClick={handleLogout}
           >
-            Oturumu Kapat
+            {t("logout")}
           </button>
         </div>
       </div>

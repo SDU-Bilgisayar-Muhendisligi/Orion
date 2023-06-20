@@ -2,7 +2,7 @@ import Sidebar from 'components/Sidebar'
 import BottomBar from 'components/BottomBar'
 import Content from 'components/Content'
 import { BrowserRouter as Router } from "react-router-dom"
-import React from 'react';
+import React, { Suspense } from 'react';
 import PlayList from './PlayList';
 import './App.css';
 
@@ -10,14 +10,16 @@ import './App.css';
 
 function App() {
 	return (
-		<Router>
-			<div className="wrapper">
-				<Sidebar/>
-				<Content/>
-				<PlayList />
-			</div>
-			<BottomBar/>
-		</Router>
+		<Suspense fallback="loading">
+			<Router>
+				<div className="wrapper">
+					<Sidebar />
+					<Content />
+					<PlayList />
+				</div>
+				<BottomBar />
+			</Router>
+		</Suspense>
 	);
 }
 

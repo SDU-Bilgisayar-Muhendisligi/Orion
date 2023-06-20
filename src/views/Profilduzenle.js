@@ -1,15 +1,18 @@
+
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 
 function Profileduzenle() {
+	const { t } = useTranslation();
 	return (
 	  <div className="flex flex-col items-center justify-center min-h-screen ">
 		<form className="w-full max-w-lg p-6 rounded-lg shadow-md">
 		  <div className="mb-4">
 			<label className="block mb-2 font-bold text-gray-900 " htmlFor="email">
-			  E-posta
+			  E-mail
 			</label>
 			<input
-			  className="w-full px-3 py-2 leading-tight text-gray-900  border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+			  className="w-full px-3 py-2 leading-tight text-black  border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
 			  id="email"
 			  type="email"
 			  placeholder="Email"
@@ -17,21 +20,21 @@ function Profileduzenle() {
 		  </div>
 		  <div className="mb-4">
 			<label className="block mb-2 font-bold text-gray-900 " htmlFor="password">
-			  Parola
+			{t("password")}
 			</label>
 			<input
-			  className="w-full px-3 py-2 leading-tight text-gray-900 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+			  className="w-full px-3 py-2 leading-tight text-black  border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
 			  id="password"
 			  type="password"
 			  placeholder="Password"
 			/>
 		  </div>
 		  <div className="mb-4">
-			<label className="block mb-2 font-bold text-gray-900" htmlFor="gender">
-			  Cinsiyet
+			<label className="block mb-2 font-bold  " htmlFor="gender">
+			{t("gender")}
 			</label>
 			<select
-			  className="w-full px-3 py-2 leading-tight text-gray-900 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+			  className="w-full px-3 py-2 leading-tight text-black  border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
 			  id="gender"
 			>
 			  <option value="">Select your gender</option>
@@ -42,10 +45,10 @@ function Profileduzenle() {
 		  </div>
 		  <div className="mb-4">
 			<label className="block mb-2 font-bold text-gray-900" htmlFor="birthdate">
-			  Doğum tarihi
+			{t("date-of-birth")}
 			</label>
 			<input
-			  className="w-full px-3 py-2 leading-tight text-gray-900 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+			  className="w-full px-3 py-2 leading-tight text-black border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
 			  id="birthdate"
 			  type="date"
 			  placeholder="Birth Date"
@@ -53,10 +56,10 @@ function Profileduzenle() {
 		  </div>
 		  <div className="mb-4">
 			<label className="block mb-2 font-bold text-gray-900" htmlFor="country">
-			  Ülke veya bölge
+			{t("country-or-region")}
 			</label>
 			<input
-			  className="w-full px-3 py-2 leading-tight text-gray-900 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+			  className="w-full px-3 py-2 leading-tight text-black  border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
 			  id="country"
 			  type="text"
 			  placeholder="Country or Region"
@@ -66,7 +69,7 @@ function Profileduzenle() {
 			className="w-full px-4 py-2 font-bold bg-blue-700 rounded hover:bg-blue-900 focus:outline-none focus:shadow-outline-blue"
 			type="button"
 		  >
-			Kaydet
+			{t("save")}
 		  </button>
 		</form>
 	  </div>

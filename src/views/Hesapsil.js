@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 function Hesapsil() {
   const [selectedOption, setSelectedOption] = useState("");
+  const { t } = useTranslation();
 
   const submit = () => {
     // delete account logic
@@ -22,13 +24,12 @@ function Hesapsil() {
           <div className="max-w-md mx-auto">
             <div className="flex items-center space-x-5">
               <div className="h-14 w-14 bg-red-100 rounded-full flex flex-shrink-0 justify-center items-center text-red-500 text-2xl font-mono relative">
-                <span className="text-black">#</span>
                 <span className="circle"></span>
               </div>
               <div className="block pl-2 font-semibold text-xl self-start text-black">
-                <h2 className="leading-relaxed">Hesabınızı silmek istediğinizden emin misiniz?</h2>
+                <h2 className="leading-relaxed">{t("delete-text")}</h2>
                 <p className="text-sm text-gray-500 font-normal leading-relaxed">
-                  Bu işlem geri alınamaz.
+                   {t("undone-text")}
                 </p>
               </div>
             </div>
@@ -37,27 +38,14 @@ function Hesapsil() {
                 <form>
                   <div className="flex items-center space-x-4">
                     <div className="flex flex-col">
-                      <button
-                        type="button"
-                        className="inline-flex items-center px-6 py-3 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-red-500 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
-                        onClick={confirmationDialog}
-                      >
-                        Evet
-                      </button>
-                    </div>
-                    <div className="flex flex-col">
-                      <div className="bg-white border border-gray-300 rounded-md p-3">
-                        <label className="inline-flex items-center">
-                          <input
-                            type="radio"
-                            className="form-radio"
-                            name="options"
-                            value="hayir"
-                            checked={selectedOption === "hayir"}
-                            onChange={handleOptionChange}
-                          />
-                          <span className="ml-2 text-black">Evet</span>
-                        </label>
+                      <div className="flex space-x-2">
+                        <button
+                          type="button"
+                          className="inline-flex items-center px-6 py-3 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-red-500 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                          onClick={confirmationDialog}
+                        >
+                          {t("delete-confirm-text")}
+                        </button>
                       </div>
                     </div>
                   </div>

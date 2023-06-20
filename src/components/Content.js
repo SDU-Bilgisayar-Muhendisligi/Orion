@@ -14,6 +14,7 @@ import Profilduzenle from 'views/Profilduzenle';
 import Hesapsil from 'views/Hesapsil';
 import Dil from 'views/Dil';
 import Oturumkapatma from 'views/Oturumkapatma';
+import Begenme from 'views/Begenme';
 
 
 function Content() {
@@ -60,6 +61,9 @@ function Content() {
 					</Route>
 					<Route path="/Oturumkapatma">
 						<Oturumkapatma />
+					</Route>
+					<Route path="/begenme">
+						<Begenme />
 					</Route>
 				</Switch>
 			</div>

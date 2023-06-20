@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Parola() {
+  const { t } = useTranslation();
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -30,7 +32,7 @@ function Parola() {
   return (
     <div className="flex items-center justify-center h-screen">
       <div className="w-full max-w-xs">
-        <h1 className="text-3xl font-bold mb-4">Parola değiştirme</h1>
+        <h1 className="text-3xl font-bold mb-4">{t("change-password")}</h1>
         <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
           <input
             type="password"
@@ -38,7 +40,7 @@ function Parola() {
             placeholder="Current Password"
             value={currentPassword}
             onChange={handleChange}
-            className="border py-2 px-3 text-gray-700 rounded-md"
+            className="border py-2 px-3 text-black text-gray-700 rounded-md"
           />
           <input
             type="password"
@@ -46,7 +48,7 @@ function Parola() {
             placeholder="New Password"
             value={newPassword}
             onChange={handleChange}
-            className="border py-2 px-3 text-gray-700 rounded-md"
+            className="border py-2 px-3 text-black text-gray-700 rounded-md"
           />
           <input
             type="password"
@@ -54,13 +56,13 @@ function Parola() {
             placeholder="Confirm Password"
             value={confirmPassword}
             onChange={handleChange}
-            className="border py-2 px-3 text-gray-700 rounded-md"
+            className="border py-2 px-3 text-black text-gray-700 rounded-md"
           />
           <button
             type="submit"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            className="bg-blue-500 hover:bg-blue-700  text-white font-bold py-2 px-4 rounded"
           >
-            Parolayı değiştir
+            {t("change-password")}
           </button>
         </form>
       </div>

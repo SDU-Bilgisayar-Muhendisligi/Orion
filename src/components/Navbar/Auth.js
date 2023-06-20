@@ -3,9 +3,11 @@ import { Icon } from "Icons";
 import Album from 'views/Album';
 import Profil from 'views/Profil';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
 
 function Auth() {
-
+    const { t } = useTranslation();
     const user = {
         name: 'User',
         avatar: 'https://storage.needpix.com/rsynced_images/profile-2398782_1280.png'
@@ -28,21 +30,21 @@ function Auth() {
                     <Menu.Item>
                             {({ active }) => (
                                 <NavLink to="/Hesapgorunum" className={`h-10 flex items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}>
-                                    Hesap Genel Görünüm
+                                    {t("account-overview")}
                                 </NavLink>
                             )}
                         </Menu.Item>
                         <Menu.Item>
                             {({ active }) => (
                                <NavLink to="/Kayıt" className={`h-10 flex items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}>
-                               Kayıt Ol
+                               {t("sign-up")}
                            </NavLink>
                             )}
                         </Menu.Item>
                         <Menu.Item>
                             {({ active }) => (
                                 <NavLink to="/GirişYap" className={`h-10 flex items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}>
-                                Giriş Yap
+                                {t("login")}
                             </NavLink>
                             )}
                         </Menu.Item>
@@ -51,7 +53,7 @@ function Auth() {
                             {({ active }) => (
                                 
                                 <NavLink to="/Profil" className={`h-10 flex items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}>
-                                Profil Görüntüle
+                                {t("account")}
                             </NavLink>
                             )}
                         </Menu.Item>
@@ -59,35 +61,35 @@ function Auth() {
                             {({ active }) => (
                                 
                                 <NavLink to="/Profilduzenle" className={`h-10 flex items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}>
-                                Profil Düzenle
+                                {t("edit-account")}
                             </NavLink>
                             )}
                         </Menu.Item>
                         <Menu.Item>
                             {({ active }) => (
                                 <NavLink to="/Dil" className={`h-10 flex items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}>
-                                    Dil Ayarla
+                                    {t("language")}
                                 </NavLink>
                             )}
                         </Menu.Item>
                         <Menu.Item>
                             {({ active }) => (
                                 <NavLink to="/Parola" className={`h-10 flex items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}>
-                                    Parolayı Değiştir
+                                    {t("change-password")}
                                 </NavLink>
                             )}
                         </Menu.Item>
                         <Menu.Item>
                             {({ active }) => (
                                 <NavLink to="/Oturumkapatma" className={`h-10 flex items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}>
-                                    Oturum Kapat
+                                    {t("logout")}
                                 </NavLink>
                             )}
                         </Menu.Item>
                         <Menu.Item>
                             {({ active }) => (
                                 <NavLink to="/Hesapsil" className={`h-10 flex items-center px-2 text-sm rounded ${active && 'bg-white bg-opacity-10'}`}>
-                                    Hesap Sil
+                                    {t("delete-account")}
                                 </NavLink>
                             )}
                         </Menu.Item>

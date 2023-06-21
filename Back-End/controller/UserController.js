@@ -1,6 +1,7 @@
 const User = require("../models/User");
 var mongoose = require("mongoose");
 const passport = require("passport");
+
 const cevapOlustur = function (res, status, content) {
   res.status(status).json(content);
 };
@@ -70,9 +71,6 @@ const getUser = async function (req, res) {
 module.exports = {
   kayitOl,
   getUser,
-  updateUser,
-  getUsers,
   girisYap,
-  changePassword,
   loggedInUser,
 };

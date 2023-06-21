@@ -2,6 +2,10 @@ const Album = require("../models/Album");
 const User = require("../models/User");
 var mongoose = require("mongoose");
 
+const cevapOlustur = function (res, status, content) {
+  res.status(status).json(content);
+};
+
 const getUserAlbums = async (req, res) => {
   const { userId } = req.params;
   if (!userId)
@@ -21,10 +25,5 @@ const getUserAlbums = async (req, res) => {
 };
 
 module.exports = {
-  getAlbumSongs,
-  addSongToAlbum,
-  createAlbum,
-  getAlbumById,
-  getAllAlbums,
   getUserAlbums,
 };

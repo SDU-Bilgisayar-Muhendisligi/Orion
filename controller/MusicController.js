@@ -13,14 +13,14 @@ const createMusic = async (req, res, next) => {
   if (!categoryId)
     return cevapOlustur(res, 400, { hata: "tum alanlar gerekli" });
   try {
-    const { songName, artistName, image, src } = req.body;
+    const { songName, artistName, image, src, lyrics } = req.body;
 
     const category = await Category.findById(categoryId);
 
     if (!category) {
       return res.status(404).json({ error: "Albüm bulunamadı." });
     }
-    const newSong = await Music.create({ songName, artistName, image, src });
+    const newSong = await Music.create({ songName, artistName, image, src, lyrics });
 
     category.musics.push(newSong);
     await category.save();

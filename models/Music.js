@@ -6,6 +6,7 @@ const musicSchema = new mongoose.Schema({
   src: { type: String, required: true },
   artistName: { type: String, required: true },
   createdAt: { type: Date, default: Date.now },
+  lyrics: { type: String, required: true },
 });
 
 const Music = mongoose.model("Music", musicSchema);
